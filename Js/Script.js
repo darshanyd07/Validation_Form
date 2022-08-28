@@ -1,5 +1,3 @@
-// var loginModal = $('#loginModal');
-
 window.onclick = function(event)
  {
    if (event.target == loginModal || event.target == registerModal) {
