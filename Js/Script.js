@@ -1,28 +1,3 @@
-window.onclick = function(event)
- {
-   if (event.target == loginModal || event.target == registerModal) {
-   $('#registerModal').hide();
-   $('#email').val('');
-   $('#password').val('');
-
-   $('#loginModal').hide();
-   $('#firstname').val('');
-   $('#lastname').val('');
-   $('#DOB').val('');
-   $('#mobile').val('');
-   $('#email_').val('');
-   $('#password_').val('');
-   $('#cpassword_').val('');
-   $('#h1').prop('checked', false);
-   $('#h2').prop('checked', false);
-   $('#h3').prop('checked', false);
-   $('#address').val('');
-   $('#zipcode').val('');
-   $('.man').val('');
-
-   }
- }
-
 
 var first_name = $("#firstname");
 var last_name = $("#lastname");
