@@ -76,6 +76,8 @@ footer a{
     font-weight: bold;
     color: #f1552e;
 }
+
+
 #p1{
     font-weight: bold;
     color: #f1552e;
@@ -92,6 +94,8 @@ footer a{
     border:1px solid transparent;
 }
 
+
+
 #loginBtn1, #registerBtn1 {
     cursor: pointer;
 }
@@ -99,7 +103,8 @@ footer a{
 
 
 
-/* Modal code start*/
+
+
 
 /* The Modal (background) */
 .modal {
