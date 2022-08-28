@@ -107,7 +107,6 @@ function Index()
                  }
            }
            $('#show_11').text(checkedValue);
-           // sessionStorage.setItem('register_data',JSON.stringify(data));
            $('#registerModal').hide();
            $('#firstname').val('');
            $('#lastname').val('');
