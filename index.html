@@ -53,13 +53,13 @@
 
                     <div class="from-group">
                         <label for="password">Password <small class="dan">*</small></label>
-                        <input on="index.pass();" size="15" placeholder="Password" type="text" name="password"
+                        <input on="index.pass();" size="15" minlength="8" maxlength="18" placeholder="Password" type="text" name="password"
                             id="password_" value="">
                         <span id="ps" class="dan man"></span>
                     </div>
                     <div class="from-group">
                         <label for="cpassword"> Confirm Password <small class="dan">*</small></label>
-                        <input oninput="index.cpass();" size="15" placeholder="Confirm Password" type="text"
+                        <input oninput="index.cpass();" size="15" minlength="8" maxlength="18" placeholder="Confirm Password" type="text"
                             name="cpassword" id="cpassword_" value="">
                         <span id="cs" class="dan man"></span>
                     </div>
@@ -71,7 +71,31 @@
                         <br />
                         <span class="dan man" id="hs"></span>
                     </div>
-                    
+                    <div class="from-group">
+                        <label>City <small class="dan">*</small></label>
+                        <select onchange="index.ci();" name="city" id="city"
+                            style="padding:8px;width:100%;margin-top:10px;border: #ddd 1px solid;">
+                            <option value="">Select City</option>
+                            <option value="pen">Pen</option>
+                            <option value="alibug">Alibug</option>
+                            <option value="panvel">Panvel</option>
+                        </select>
+                        <span class="dan man" id="lo"></span>
+                    </div>
+
+                    <div class="from-group">
+                        <label for="address">Address <small class="dan">*</small></label>
+                        <textarea oninput="index.addr();" minlength="10" maxlength="40" size="40" placeholder="Addreess"
+                            id="address" name="address" rows="4" cols="50"
+                            style="padding:8px;width:96%;margin-top:10px;border: #ddd 1px solid;"></textarea><br>
+                        <span class="dan man" id="as"></span>
+                    </div>
+                    <div class="from-group">
+                        <label for="zip-code">zip-code <small class="dan">*</small></label>
+                        <input oninput="index.z();" minlength="6" maxlength="6" size="6" placeholder="Zip-Code"
+                            type="text" name="zipcode" id="zipcode" value="">
+                        <span class="dan man" id="zs"></span>
+                    </div>
 
 
                     <button onclick="index.validateForm();" type="button" class="btn" name="submit"
